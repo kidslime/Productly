@@ -1,0 +1,24 @@
+.footer__container {
+    display: flex;
+    align-items: start;
+}
+
+.navigation__title {
+    margin: 0 0 15px;
+}
+
+.footer-navigation {
+    flex-grow: 1;
+}
+
+.navigation__list {
+    padding: 0;
+    list-style: none;
+    @extend %font-add;
+}
+
+.navigation__link {
+    text-decoration: none;
+    color: $color-text;
+    @include font($size: 1.6rem, $height: 3.5rem, $weight: 400);
+}

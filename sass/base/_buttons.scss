@@ -1,0 +1,38 @@
+.button {
+    padding: 11px 25px 13px;
+    @extend %font-primary;
+    @include font($size: 1.6rem, $height: 2.2rem, $weight: 600);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+    &_bordered {
+        background-color: $color-light;
+        border: 1px solid $color-border;
+        color: $color-button-text;
+        &:hover {
+            background-color: $color-blue-light;
+            border-color: $color-blue-light;
+        }
+    }
+    &_colored {
+        background-color: $color-primary;
+        color: $color-light;
+        border: 1px solid $color-primary;
+        &:hover {
+            background-color: $color-additional;
+            border-color: $color-additional;
+        }
+    }
+}
+
+.link-button {
+    @extend %font-add;
+    color: $color-primary;
+    @include font($size: 1.6rem, $height: 2.4rem, $weight: 600);
+    display: inline-flex;
+    align-items: center;
+}
+
+.link-button__text {
+    margin-left: 9px;
+}

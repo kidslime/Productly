@@ -1,0 +1,25 @@
+.menu {
+    display: flex;
+    list-style: none;
+    @include font($size: 1.5rem, $height: 2.8rem, $weight: 400);
+}
+
+.menu__item {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 28px;
+    cursor: pointer;
+    &:hover {
+        color: $color-primary;
+    }
+    &:not(:last-child) {
+        margin-right: 17px;
+    }
+}
+
+.header__menu {
+    @include media-tablet {
+        display: none;
+    }
+}
